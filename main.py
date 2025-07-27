@@ -259,3 +259,8 @@ async def analyze_cafes_stream_endpoint(request: PlaceListRequest):
         get_cafe_feature(request.places),
         media_type="application/x-json-stream"
     )
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
