@@ -16,6 +16,7 @@ load_dotenv()
 app = FastAPI()
 origins = [
     "http://localhost:5173",
+    "https://wtg.nomadean.com"
 ]
 app.add_middleware(
     CORSMiddleware,
