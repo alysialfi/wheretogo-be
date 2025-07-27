@@ -4,3 +4,4 @@ overpass
 googlemaps
 # google-generativeai
 google-genai
+python-dotenv
